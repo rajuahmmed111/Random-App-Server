@@ -18,17 +18,17 @@ export const corsOptions = {
 };
 
 // Security middleware
-app.use(helmet());
+// app.use(helmet());
 
 app.use(cors(corsOptions));
 
 // Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100,
-  message: "Too many requests from this IP, please try again later.",
-});
-app.use(limiter);
+// const limiter = rateLimit({
+//   windowMs: 15 * 60 * 1000, // 15 minutes
+//   max: 100,
+//   message: "Too many requests from this IP, please try again later.",
+// });
+// app.use(limiter);
 
 // Body parsing middleware
 app.use(express.json({ limit: "10mb" }));
