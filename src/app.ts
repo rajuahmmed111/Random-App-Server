@@ -7,7 +7,6 @@ import rateLimit from "express-rate-limit";
 import { errorHandler } from "./app/middleware/errorHandler";
 import { notFound } from "./app/middleware/notFound";
 import routes from "./app/routes";
-import config from "./config/config";
 
 const app = express();
 
