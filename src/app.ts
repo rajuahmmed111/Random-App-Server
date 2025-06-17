@@ -11,7 +11,7 @@ import routes from "./app/routes";
 const app = express();
 
 export const corsOptions = {
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: ["https://random-app-red.vercel.app", "http://localhost:3001"],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
