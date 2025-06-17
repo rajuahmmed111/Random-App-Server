@@ -6,7 +6,6 @@ dotenv.config({ path: path.join(process.cwd(), ".env") });
 export default {
   env: process.env.NODE_ENV,
   frontend_url: process.env.FRONTEND_URL,
-  backend_base_url: process.env.BACKEND_IMAGE_URL,
   port: process.env.PORT,
 
   jwt: {
@@ -19,9 +18,4 @@ export default {
   },
 
   reset_pass_link: process.env.RESET_PASS_LINK,
-
-  emailSender: {
-    email: process.env.EMAIL,
-    app_pass: process.env.APP_PASS,
-  },
 };
